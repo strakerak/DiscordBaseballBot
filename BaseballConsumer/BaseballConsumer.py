@@ -130,7 +130,7 @@ class BaseballUpdaterBot:
                "{}" \
                "{}".format(self.formatLinescoreForDiscord(gameEvent, linescore),
                            self.formatPitchCount(gameEvent['gameEvent'], gameEvent['balls'], gameEvent['strikes']),
-                           gameEvent['description'],
+                           gameEvent['description'], #I would recommend removing this or commenting it out as it will just post the description message twice - strakerak
                            self.playerismsAndEmoji(gameEvent, linescore),
                            self.endOfInning(gameEvent))
 
